@@ -7,7 +7,7 @@
   justify-content: center;
   gap: 0.5rem;
   cursor: pointer;
-  background-color: var(--cl-darkGold);
+  background-color: var(--cl-blue);
   color: var(--cl-white);
   font-family: var(--font-Paragraph);
 }

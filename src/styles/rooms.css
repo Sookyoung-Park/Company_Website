@@ -76,13 +76,13 @@
   text-align: center;
   gap: 1rem;
   flex-direction: column;
-  border: solid 1px var(--cl-darkBlue);
+  border: solid 1px var(--cl-black);
   border-radius: 0 0 8px 8px;
 }
 
 .rooms-Title {
   width: 100%;
-  background-color: var(--cl-darkBlue);
+  background-color: var(--cl-black);
   color: var(--cl-white);
   padding: 2rem;
 }
@@ -182,14 +182,14 @@
   background: transparent;
   font-size: 4rem;
   cursor: pointer;
-  color: var(--cl-darkBlue);
+  color: var(--cl-black);
 }
 
 @media screen and (max-width: 768px) {
   .close-modal {
     font-size: var(--font-lg);
     width: 100%;
-    background-color: var(--cl-darkBlue);
+    background-color: var(--cl-black);
     z-index: 1;
     color: var(--cl-white);
   }

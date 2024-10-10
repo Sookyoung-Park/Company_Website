@@ -2,7 +2,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'; // Import s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Luxury from '../images/LogoName.png';
+import LogoImg from '../images/DesignOnLogo.png';
 import './style/header.css';
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
       <nav className="navbar">
          <div className="navbar-brand">
             <NavLink to="/">
-               <img src={Luxury} alt="Luxury Logo" />
+               <img src={LogoImg} alt="Luxury Logo" />
             </NavLink>
             <div className="navbar-toggle" onClick={toggleNavbar}>
                {isMobile ? (

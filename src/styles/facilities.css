@@ -41,7 +41,7 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  color: var(--cl-darkBlue);
+  color: var(--cl-black);
   gap: 2rem;
 }
 
@@ -52,7 +52,7 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  color: var(--cl-darkBlue);
+  color: var(--cl-black);
   gap: 2rem;
 }
 

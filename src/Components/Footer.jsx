@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Luxury from '../images/LogoName.png'; // Adjust the import path as necessary
-import Button from './Button';
 import './style/footer.css';
 import { motion } from 'framer-motion';
 
@@ -70,9 +69,7 @@ function Footer() {
                <NavLink to="/">
                   <img src={Luxury} alt="Luxury Hotels" />
                </NavLink>
-               <p className="home-p">567, Sibonga St, Pandan Cebu, 6020</p>
-               <p className="home-p">+63 93 1028 2926</p>
-               <p className="home-p">bansimplified567@gmail.com</p>
+               <p className="home-p">design.on.studio.uiux@gmail.com</p>
             </section>
             <section className="footer-navigation">
                <ul>
@@ -113,20 +110,6 @@ function Footer() {
                      </a>
                   </li>
                </ul>
-            </section>
-            <section className="footer-newsletter">
-               <h4>Subscribe to our newsletter</h4>
-               <div className="footer-input">
-                  <input
-                     type="email"
-                     placeholder="Email Address"
-                     value={email}
-                     onChange={handleEmailChange}
-                  />
-                  <Button classEx="footer-button" onClick={handleEmailSubmit}>
-                     OK
-                  </Button>
-               </div>
             </section>
          </motion.footer>
       </>

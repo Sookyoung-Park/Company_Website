@@ -1,7 +1,7 @@
 /* General navbar styles */
 .navbar-brand {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -14,9 +14,9 @@
   height: clamp(3rem, 10vw, 5rem);
   width: auto;
   cursor: pointer;
-  background-color: var(--cl-darkGold);
-  padding: 1rem;
-  border-radius: 0 0 2rem 2rem;
+  background-color: var(--cl-blue);
+  /* padding: 1rem; */
+  /* border-radius: 0 0 2rem 2rem; */
 }
 
 /* Navbar links styling */
@@ -44,7 +44,7 @@
   bottom: 0;
   height: 0.2rem;
   width: 100%;
-  background-color: var(--cl-darkGold);
+  background-color: var(--cl-blue);
   transform: scaleY(0);
   transition: transform 0.3s ease;
 }
@@ -126,7 +126,7 @@
     justify-content: flex-start;
     width: 100%;
     padding: 1rem;
-    border-bottom: 1px solid var(--cl-darkGold);
+    border-bottom: 1px solid var(--cl-blue);
   }
 }
 

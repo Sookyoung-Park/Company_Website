@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Button from '../Components/Button';
 import Footer from '../Components/Footer';
-import SlidingQuotes from '../Components/SlidingQuotes';
 import WideBeach from '../images/beachWide.png';
 import DoubleRooms from '../images/doubleroom.png';
 import '../styles/home.css';
@@ -28,38 +27,30 @@ function Home() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                >
-                  <h3 className="home-h3">WELCOME TO</h3>
+                  {/* Crafting digital experiences that inspire today and shape tomorrow. */}
+                  <h3 className="home-h3">Crafting</h3>
                   <motion.h1
                      className="home-h1"
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
-                     transition={{ delay: 0.5 }}
+                     transition={{ delay:0.3, duration: 0.9 }}
                   >
-                     LUXURY
+                     Digial
+                     <br/>
+                     Experiences
                   </motion.h1>
-                  <motion.h2
-                     className="home-h2"
-                     initial={{ opacity: 0 }}
-                     animate={{ opacity: 1 }}
-                     transition={{ delay: 1 }}
-                  >
-                     HOTELS
-                  </motion.h2>
                   <p className="home-p">
-                     Book your stay and enjoy Luxury <br />
-                     redefined at the most affordable rates.
+                     <br/>
+                     <br/>
+                     that inspire today and shape tomorrow.
                   </p>
                </motion.section>
                <motion.section
                   className="homesection-Two"
                   initial={{ opacity: 0, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.7 }}
                >
-                  <Button classEx="home-button" onClick={handleExploreClick}>
-                     <FontAwesomeIcon icon={faHouse} />
-                     BOOK NOW
-                  </Button>
                   <a href="#home-section-two">
                      <FontAwesomeIcon icon={faCircleArrowDown} className="home-arrow-down" />
                   </a>
@@ -73,7 +64,8 @@ function Home() {
                   whileInView={{ opacity: 1, x: 0 }} // Animate to full opacity and original position when in view
                   transition={{ duration: 0.5 }} // Duration of 0.5 seconds
                >
-                  All our room types are including complementary breakfast
+                  We collaborate with you to create designs 
+                  <br/>that solve immediate needs while building for the future.
                </motion.p>
                <motion.article
                   className="homesectionTwo-One"
@@ -82,19 +74,21 @@ function Home() {
                   transition={{ duration: 0.5 }} // Duration of 0.5 seconds
                >
                   <motion.div className="homesectionTwo-Paragraph">
-                     <h1 className="home-h1">Luxury redefined</h1>
+                     <h1 className="home-h1">Design</h1>
                      <motion.p
                         className="home-p"
                         initial={{ opacity: 0, x: 100 }} // Start off-screen with 0 opacity
                         whileInView={{ opacity: 1, x: 0 }} // Animate to full opacity and original position when in view
                         transition={{ duration: 0.5 }} // Duration of 0.5 seconds
                      >
-                        Our rooms are designed to transport you into an environment made for
-                        leisure. Take your mind off the day-to-day of home life and find a private
-                        paradise for yourself.
+                        Exceptional design starts with understanding. 
+                        We dive deep into user insights to create interfaces that are not only visually 
+                        stunning but also intuitive and user-centered. 
+                        <br/>
+                        Our service is tailored to meet your users’ needs while pushing the boundaries of creativity.
                      </motion.p>
                      <Button classEx="home-button" onClick={handleExploreClick}>
-                        EXPLORE
+                        VIEW MORE
                      </Button>
                   </motion.div>
                   <img src={DoubleRooms} alt="DoubleRooms" />
@@ -107,17 +101,39 @@ function Home() {
                   transition={{ duration: 0.5 }} // Duration of 0.5 seconds
                >
                   <motion.div className="homesectionTwo-Paragraph">
-                     <h1 className="home-h1">Leave your worries in the sand</h1>
+                     <h1 className="home-h1">Development</h1>
                      <p className="home-p">
-                        We love life at the beach. Being close to the ocean with access to endless
-                        sandy beach ensures a relaxed state of mind. It seems like time stands still
-                        watching the ocean.
+                     Our development team builds responsive, fast, and scalable digital experiences. 
+                     We ensure that your site or app performs flawlessly across all devices, 
+                     with a focus on robust functionality and seamless user experience.
                      </p>
                      <Button classEx="home-button" onClick={handleExploreClick}>
-                        EXPLORE
+                        VIEW MORE
                      </Button>
                   </motion.div>
                   <img src={WideBeach} alt="WideBeach" />
+               </motion.article>
+               <motion.article
+                  className="homesectionTwo-One"
+                  initial={{ opacity: 0, x: -100 }} // Start off-screen with 0 opacity
+                  whileInView={{ opacity: 1, x: 0 }} // Animate to full opacity and original position when in view
+                  transition={{ duration: 0.5 }} // Duration of 0.5 seconds
+               >
+                  <motion.div className="homesectionTwo-Paragraph">
+                     <h1 className="home-h1">Branding</h1>
+                     <motion.p
+                        className="home-p"
+                        initial={{ opacity: 0, x: 100 }} // Start off-screen with 0 opacity
+                        whileInView={{ opacity: 1, x: 0 }} // Animate to full opacity and original position when in view
+                        transition={{ duration: 0.5 }} // Duration of 0.5 seconds
+                     >
+                        Your brand is more than a logo—it’s an experience. We craft cohesive and memorable brand identities that speak to your audience and set you apart. From visuals to voice, we ensure your brand tells a compelling story at every touchpoint.
+                     </motion.p>
+                     <Button classEx="home-button" onClick={handleExploreClick}>
+                        VIEW MORE
+                     </Button>
+                  </motion.div>
+                  <img src={DoubleRooms} alt="DoubleRooms" />
                </motion.article>
             </motion.section>
             <motion.section
@@ -125,7 +141,17 @@ function Home() {
                whileInView={{ opacity: 1, x: 0 }}
                transition={{ duration: 0.5 }}
             >
-               <SlidingQuotes />
+            <div className="home-sectionThree">
+               <h1 className="home-h1">Let’s Build Something Remarkable</h1>
+               <section className="homesectionThree-One">
+                  <p className="home-p">
+                     Ready to elevate your brand? 
+                     <br/>
+                     Our passion for design and development drives us to create exceptional solutions 
+                     <br/>
+                     that leave a lasting impression. Let’s start building together</p>
+               </section>
+            </div>
             </motion.section>
             <motion.section
                initial={{ opacity: 0, x: -100 }}

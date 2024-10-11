@@ -4,13 +4,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import Button from '../Components/Button';
 import Footer from '../Components/Footer';
-import '../styles/rooms.css';
+import '../styles/services.css';
 
-import RoomsCategory2 from '../images/doubleroom.png'; // Sample image
 import RoomsCategory from '../images/SingleRoomWithLaptop.png'; // Sample image
 import RoomsCategory3 from '../images/frames-for-your-heart-FqqiAvJejto-unsplash.jpg'; // Sample image
 
-function Rooms() {
+function Services() {
    const details = [
       {
          title: 'SINGLE ROOM',
@@ -22,7 +21,7 @@ function Rooms() {
       {
          title: 'DOUBLE ROOM',
          price: '₱1,829 Avg/day',
-         image: RoomsCategory2,
+         image: RoomsCategory3,
          description:
             'Our Double Room provides a cozy retreat for couples or friends, featuring two plush double beds with high-quality linens, a stylish and spacious layout with natural light, and a modern ensuite bathroom with complimentary toiletries. Enjoy in-room amenities like free Wi-Fi, a flat-screen TV with cable, a mini-fridge, a work desk, a coffee maker, a safe for valuables, and 24/7 room service for a relaxing stay after a day of exploration or work.',
       },
@@ -75,8 +74,8 @@ function Rooms() {
 
    return (
       <>
-         <div className="rooms-Container">
-            <div className="rooms-sectionOne">
+         <div className="services-Container">
+            <div className="services-sectionOne">
                <motion.section
                   className="homesection-One"
                   initial={{ opacity: 0, x: -100 }}
@@ -141,32 +140,32 @@ function Rooms() {
             </motion.div>
 
             {/* Image sliding section */}
-            <div className="rooms-SectionCategory">
+            <div className="services-SectionCategory">
                {details.map((detail, index) => (
                   <motion.div
                      key={index}
-                     className="rooms-Carousel"
+                     className="services-Carousel"
                      initial={{ opacity: 0, x: 100 }}
                      whileInView={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.5 }}
                   >
                      <AnimatePresence mode="wait">
-                        <motion.div className="rooms-Slide">
+                        <motion.div className="services-Slide">
                            <img
                               src={detail.image}
                               alt={`₱{,de9tail.title}`}
-                              className="rooms-SlideImage"
+                              className="services-SlideImage"
                            />
                         </motion.div>
                      </AnimatePresence>
 
                      <motion.section
-                        className="rooms-Details"
+                        className="services-Details"
                         initial={{ opacity: 0, x: 100 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                      >
-                        <div className="rooms-Title">
+                        <div className="services-Title">
                            <h1 className="home-h1">{detail.title}</h1>
                         </div>
                         <div className="room-toggle-details">
@@ -182,7 +181,7 @@ function Rooms() {
                            </Button>
                         </div>
                         {showDetails[index] && (
-                           <p className="home-p rooms-toggle-description">{detail.description}</p>
+                           <p className="home-p services-toggle-description">{detail.description}</p>
                         )}
                      </motion.section>
                   </motion.div>
@@ -195,7 +194,7 @@ function Rooms() {
                      <Button classEx="close-modal" onClick={closeModal}>
                         &times;
                      </Button>
-                     <div className="rooms-modal-description">
+                     <div className="services-modal-description">
                         <img src={selectedDetail.image} alt={selectedDetail.title} />
                         <div className="modal-details">
                            <h2 className="home-h3">{selectedDetail.title}</h2>
@@ -222,4 +221,4 @@ function Rooms() {
    );
 }
 
-export default Rooms;
+export default Services;

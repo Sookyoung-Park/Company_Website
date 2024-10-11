@@ -32,8 +32,8 @@
 }
 
 .home-sectionOne,
-.rooms-sectionOne,
-.facilities-sectionOne {
+.services-sectionOne,
+.whatwedo-sectionOne {
   height: 120vh;
   z-index: 1;
 }
@@ -47,15 +47,15 @@
   }
 
   .home-sectionOne,
-  .rooms-sectionOne,
-  .facilities-sectionOne {
+  .services-sectionOne,
+  .whatwedo-sectionOne {
     padding-top: 2rem;
     height: 90vh;
   }
 
   .home-sectionOne::after,
-  .rooms-sectionOne::after,
-  .facilities-sectionOne::after {
+  .services-sectionOne::after,
+  .whatwedo-sectionOne::after {
     height: 90vh;
   }
 }

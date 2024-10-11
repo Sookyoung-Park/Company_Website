@@ -13,9 +13,9 @@ function Home() {
    // Initialize navigate function
    const navigate = useNavigate();
 
-   // Handler for explore button click to navigate to rooms page
+   // Handler for explore button click to navigate to services page
    const handleExploreClick = () => {
-      navigate('/rooms'); // Navigate to the rooms page
+      navigate('/services'); // Navigate to the services page
    };
 
    const handleContactClick=()=>{
@@ -161,11 +161,7 @@ function Home() {
                      </Button>
             </div>
             </motion.section>
-            <motion.section
-               initial={{ opacity: 0, x: -100 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               transition={{ duration: 0.5 }}
-            >
+            <motion.section>
                <Footer />
             </motion.section>
          </div>

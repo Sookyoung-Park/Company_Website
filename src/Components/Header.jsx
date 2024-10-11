@@ -29,11 +29,11 @@ const Header = () => {
                <NavLink className="navlink-text" to="/">
                   Home
                </NavLink>
-               <NavLink className="navlink-text" to="/facilities">
-                  Facilities
+               <NavLink className="navlink-text" to="/whatwedo">
+                  What We Do
                </NavLink>
-               <NavLink className="navlink-text" to="/rooms">
-                  Rooms
+               <NavLink className="navlink-text" to="/services">
+                  Services
                </NavLink>
                <NavLink className="navlink-text" to="/contact">
                   Contact Us

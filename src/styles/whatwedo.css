@@ -1,23 +1,21 @@
-.facilities-Container {
+.whatwedo-Container {
   overflow: hidden;
 }
 
 /* Section One Background */
-.facilities-sectionOne::after {
+.whatwedo-sectionOne::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120vh;
-  background-image: url('../images/nightSwimmingPool.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  background-color: #000000;
+
   z-index: -2;
 }
 
-.facilities-sectionOne::before {
+/* .whatwedo-sectionOne::before {
   content: '';
   position: absolute;
   top: 0;
@@ -26,14 +24,14 @@
   width: 100%;
   background-color: #14274a65;
   z-index: -1;
-}
+} */
 
 
-.facilities-sectionOne {
+.whatwedo-sectionOne {
   z-index: 1;
 }
 
-.facilities-sectionTwo {
+.whatwedo-sectionTwo {
   display: flex;
 
   flex-direction: column;
@@ -45,9 +43,9 @@
   gap: 2rem;
 }
 
-.facilities-sectionThree {
+.whatwedo-sectionThree {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -56,15 +54,15 @@
   gap: 2rem;
 }
 
-.facilities-img {
-  width: 50vw;
+.whatwedo-img {
+  width: 40vw;
   max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
-  .facilities-img {
+  .whatwedo-img {
     width: 100%;
   }
 }

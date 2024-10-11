@@ -3,17 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 import PoolSideBar from '../images/poolSideBar.png';
 import Restaurant from '../images/restaurant.png';
 import SwimmingPool from '../images/swimmingPool.png';
 import TheGYM from '../images/theGym.png';
 import TheSPA from '../images/theSPA.png';
 
-import Button from '../Components/Button';
 import Footer from '../Components/Footer';
-import '../styles/facilities.css';
+import '../styles/whatwedo.css';
 
-function Facilities() {
+function WhatWeDo() {
    const [lightboxImage, setLightboxImage] = useState(null);
    const navigate = useNavigate(); // Initialize navigate
 
@@ -33,89 +33,64 @@ function Facilities() {
       setLightboxImage(null);
    };
 
-   // Function to handle button click for navigating to the rooms page
+   // Function to handle button click for navigating to the services page
    const handleButtonClick = () => {
-      navigate('/rooms'); // Replace with your actual rooms page path
+      navigate('/services'); // Replace with your actual services page path
    };
 
    return (
       <>
-         <div className="facilities-Container">
+         <div className="whatwedo-Container">
             {/* Animate the welcome section */}
-            <motion.div className="facilities-sectionOne">
+            <motion.div className="whatwedo-sectionOne">
                <motion.section
                   className="homesection-One"
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                >
-                  <h3 className="home-h3">WELCOME TO</h3>
-                  <motion.h1
-                     className="home-h1"
-                     initial={{ opacity: 0 }}
-                     animate={{ opacity: 1 }}
-                     transition={{ delay: 0.5 }}
-                  >
-                     LUXURY
-                  </motion.h1>
                   <motion.h2
                      className="home-h2"
                      initial={{ opacity: 0 }}
                      animate={{ opacity: 1 }}
                      transition={{ delay: 1 }}
                   >
-                     HOTELS
+                     Building digital experiences that connect, engage, and last.
                   </motion.h2>
-                  <p className="home-p">
-                     Book your stay and enjoy Luxury <br />
-                     redefined at the most affordable rates.
+                  <p className="home-p" style={{marginTop:'40px'}}>
+                     We partner with you to design 
+                     <br/>and develop solutions that stand out today and adapt for tomorrow.
                   </p>
                </motion.section>
                <section className="homesection-Two">
-                  <Button classEx="home-button" onClick={handleButtonClick}>
-                     {/* Add onClick here */}
-                     <FontAwesomeIcon icon={faHouse} />
-                     BOOK NOW
-                  </Button>
                   <a href="#home-section-two">
                      <FontAwesomeIcon icon={faCircleArrowDown} className="home-arrow-down" />
                   </a>
                </section>
             </motion.div>
 
-            {/* Lazy-load images in the facilities section */}
+            {/* Lazy-load images in the whatwedo section */}
             <div className="home-section-two" id="home-section-two">
-               <section className="facilities-sectionTwo">
-                  <motion.h2
-                     className="home-h2"
-                     initial={{ opacity: 0, x: -100 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     transition={{ duration: 0.5 }}
-                  >
-                     FACILITIES
-                  </motion.h2>
+               <section className="whatwedo-sectionTwo">
                   <motion.p
                      initial={{ opacity: 0, x: -100 }}
                      whileInView={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.5 }}
                   >
-                     We want your stay at our lush hotel to be truly unforgettable. That is why we
-                     give special attention to all of your needs so that we can ensure an experience
-                     quite unique. Luxury hotels offers the perfect setting with stunning views for
-                     leisure and our modern luxury resort facilities will help you enjoy the best of
-                     all.
+                     lorem ipsum here lorem ipsum here lorem ipsum here lorem 
+                     <br/>ipsum here lorem ipsum here lorem ipsum here lorem ipsum here
                   </motion.p>
                </section>
 
                <motion.section
-                  className="facilities-sectionThree"
+                  className="whatwedo-sectionThree"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
                >
                   {images.map((image, index) => (
                      <motion.img
-                        className="facilities-img"
+                        className="whatwedo-img"
                         key={index}
                         src={image.src}
                         alt={image.alt}
@@ -131,7 +106,6 @@ function Facilities() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
                >
-                  <SlidingQuotes />
                </motion.section>
                <motion.section
                   initial={{ opacity: 0, y: 100 }}
@@ -155,4 +129,4 @@ function Facilities() {
    );
 }
 
-export default Facilities;
+export default WhatWeDo;

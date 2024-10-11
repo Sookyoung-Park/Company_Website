@@ -3,12 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
-import PoolSideBar from '../images/poolSideBar.png';
-import Restaurant from '../images/restaurant.png';
-import SwimmingPool from '../images/swimmingPool.png';
-import TheGYM from '../images/theGym.png';
-import TheSPA from '../images/theSPA.png';
+import Design from '../images/whatwedo_design.png';
+import Coding from '../images/whatwedo_coding.png';
+import Branding from '../images/whatwedo_branding.png';
 
 import Footer from '../Components/Footer';
 import '../styles/whatwedo.css';
@@ -18,16 +15,10 @@ function WhatWeDo() {
    const navigate = useNavigate(); // Initialize navigate
 
    const images = [
-      { src: TheGYM, alt: 'The Gym' },
-      { src: TheSPA, alt: 'The SPA' },
-      { src: PoolSideBar, alt: 'Pool Side Bar' },
-      { src: SwimmingPool, alt: 'Swimming Pool' },
-      { src: Restaurant, alt: 'Restaurant' },
+      { src: Design, alt: 'User-Centered Design' },
+      { src: Coding, alt: 'Seamless Integration of Technology' },
+      { src: Branding, alt: 'Brand Authenticity & Innovation' },
    ];
-
-   const openLightbox = (imageSrc) => {
-      setLightboxImage(imageSrc);
-   };
 
    const closeLightbox = () => {
       setLightboxImage(null);
@@ -77,8 +68,9 @@ function WhatWeDo() {
                      whileInView={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.5 }}
                   >
-                     lorem ipsum here lorem ipsum here lorem ipsum here lorem 
-                     <br/>ipsum here lorem ipsum here lorem ipsum here lorem ipsum here
+                     <h1 className='home-h1'>
+                     Our Principles
+                     </h1>
                   </motion.p>
                </section>
 
@@ -94,12 +86,12 @@ function WhatWeDo() {
                         key={index}
                         src={image.src}
                         alt={image.alt}
-                        onClick={() => openLightbox(image.src)}
                         whileHover={{ scale: 1.05 }} // Hover effect
                         whileTap={{ scale: 0.95 }} // Tap effect
                      />
                   ))}
                </motion.section>
+               
 
                <motion.section
                   initial={{ opacity: 0, x: 100 }}

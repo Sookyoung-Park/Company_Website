@@ -4,9 +4,11 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+  /* position: fixed; */
+  position:relative;
   width: 100%;
   z-index: 999;
+  /* background-color: #000000 rgba(0, 0, 0, 0.9); */
 }
 
 /* Logo brand styling */
@@ -15,8 +17,6 @@
   width: auto;
   cursor: pointer;
   background-color: var(--cl-blue);
-  /* padding: 1rem; */
-  /* border-radius: 0 0 2rem 2rem; */
 }
 
 /* Navbar links styling */

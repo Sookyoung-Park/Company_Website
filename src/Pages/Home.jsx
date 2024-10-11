@@ -69,8 +69,10 @@ function Home() {
                   whileInView={{ opacity: 1, x: 0 }} // Animate to full opacity and original position when in view
                   transition={{ duration: 0.5 }} // Duration of 0.5 seconds
                >
+                  <h1 className="home-h1">
                   We collaborate with you to create designs 
                   <br/>that solve immediate needs while building for the future.
+                  </h1>
                </motion.p>
                <motion.article
                   className="homesectionTwo-One"

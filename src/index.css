@@ -14,7 +14,7 @@
   --font-lg: clamp(1.5rem, 3vw + 1rem, 4rem);
   --font-md: clamp(1.25rem, 2vw + 1rem, 3rem);
   --font-sm: clamp(1rem, 1.5vw + 1rem, 2rem);
-  --font-xs: clamp(0.75rem, 1.2vw + 0.1rem, 1.5rem);
+  --font-xs: clamp(0.75rem, 1.2vw + 0.1rem, 1rem);
 
 }
 
@@ -29,7 +29,7 @@
     --font-md: clamp(1.5rem, 1vw, 2rem);
     /* Adjusted for smaller screens */
     --font-sm: clamp(1rem, 0.5vw, 1rem);
-    --font-xs: clamp(0.8rem, 0.3vw, 0.8rem);
+    --font-xs: clamp(0.8rem, 0.3vw, 0.6rem);
     /* Increased base size */
   }
 }

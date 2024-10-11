@@ -212,28 +212,11 @@
 .homesectionTwo-Paragraph {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 2rem;
+  padding: 2.5rem;
+  gap: 2.5rem;
   justify-content: center;
   align-items: flex-start;
   position: relative;
-}
-
-.homesectionTwo-Paragraph::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  /* Position the border to the left */
-  top: 50%;
-  /* Start at the middle */
-  transform: translateY(-50%);
-  /* Move it up by 50% of its height to center it */
-  height: 80%;
-  /* Set a specific height for the border */
-  width: 2px;
-  /* Width of the border */
-  background-color: var(--cl-black);
-
 }
 
 @media screen and (max-width: 768px) {

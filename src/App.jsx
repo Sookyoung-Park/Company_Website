@@ -36,15 +36,4 @@ function App() {
 
 export default App;
 
-/*
-You can follow me on social media:
-GitHub: https://github.com/bansimplified567
-Portfolio: https://bansimplified567.vercel.app/
-Facebook: https://www.facebook.com/him.blacklion567
-YouTube Channel: https://youtube.com/@bisdakwithcode
-LinkedIn: https://www.linkedin.com/in/jade-ivan-bringcola-bb9466272/
-Instagram: https://instagram.com/nocodearea?igshid=NzZlODBkYWE4Ng==
-Twitter: https://twitter.com/JBringcola
-TikTok: https://www.tiktok.com/@bisdakwithcode?_t=8oVlucIwybV&_r=1
-You can also send me a message or email me at: bansimplified567@gmail.com
-*/
+

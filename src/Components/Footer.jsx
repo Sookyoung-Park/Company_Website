@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import Luxury from '../images/LogoName.png'; // Adjust the import path as necessary
+import DesignOnLogo from '../images/DesignOnLogo.png';
 import './style/footer.css';
 import { motion } from 'framer-motion';
 
@@ -65,52 +65,19 @@ function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
          >
-            <section className="footer-logo">
-               <NavLink to="/">
-                  <img src={Luxury} alt="Luxury Hotels" />
-               </NavLink>
-               <p className="home-p">design.on.studio.uiux@gmail.com</p>
-            </section>
-            <section className="footer-navigation">
-               <ul>
-                  <li>
-                     <a href="https://www.facebook.com/him.blacklion567">About Us</a>
-                  </li>
-                  <li>
-                     <NavLink to="/contact">Contact</NavLink>
-                  </li>
-                  <li>
-                     <NavLink to="/contact">Terms & Conditions</NavLink>
-                  </li>
-               </ul>
-            </section>
+            <section className="footer-logo"/>
+            <section className="footer-navigation"/>
             <section className="footer-social">
-               <ul>
-                  <li>
-                     <a
-                        href="https://www.facebook.com/him.blacklion567"
-                        target="_blank"
-                        rel="noopener noreferrer"
+            <img src={DesignOnLogo} alt="Design On Studio Logo" />
+               <p className="home-p">design.on.studio.uiux@gmail.com</p>
+                  <a
+                     href="https://www.instagram.com/design.on.uiux/"
+                     target="_blank"
+                     rel="noopener noreferrer"
                      >
-                        Facebook
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://x.com/JBringcola" target="_blank" rel="noopener noreferrer">
-                        Twitter
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="https://www.instagram.com/nocodearea/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        Instagram
-                     </a>
-                  </li>
-               </ul>
-            </section>
+                     Instagram
+                  </a>
+               </section>
          </motion.footer>
       </>
    );

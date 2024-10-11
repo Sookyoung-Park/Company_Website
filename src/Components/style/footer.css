@@ -52,8 +52,9 @@
   gap: 1rem;
 }
 
-.footer-logo img {
-  filter: brightness(0) invert(1);
+.footer-social img {
+  /* filter: brightness(0) invert(1); */
+  width: 80px;
 }
 
 .footer-logo p {

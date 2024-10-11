@@ -11,7 +11,6 @@ import TheSPA from '../images/theSPA.png';
 
 import Button from '../Components/Button';
 import Footer from '../Components/Footer';
-import SlidingQuotes from '../Components/SlidingQuotes';
 import '../styles/facilities.css';
 
 function Facilities() {

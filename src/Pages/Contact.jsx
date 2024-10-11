@@ -94,41 +94,16 @@ function Contact() {
                whileInView={{ opacity: 1, x: 0 }} // Animation when it comes into view
                transition={{ duration: 0.5 }} // Animation duration
             >
-               <h1 className="home-h2">WE ARE HERE FOR YOU</h1>
-               <p className="home-p">
-                  At Luxury Hotels, we take our customers seriously. If you have any enquiries,
-                  complaints, or requests, please forward them to our support desk, and we will get
-                  back to you as soon as possible.
+               <h1 className="home-h2" style={{alignSelf:'center'}}>Let’s Build Something Remarkable</h1>
+               <p className="home-p" style={{alignSelf:'center', marginTop:32}}>
+               Ready to elevate your brand? Our passion for design and development drives us
+               <br/>
+               to create exceptional solutions that leave a lasting impression. Let’s start building together.
                </p>
             </motion.section>
 
             {/* Animated Form and Contact Details */}
-            <div className="contact-form-container">
-               {/* Contact Details - Slide In from the Left */}
-               <motion.section
-                  className="contact-section-details"
-                  ref={refDetails}
-                  initial={{ opacity: 0, y: 100 }} // Animation start state
-                  whileInView={{ opacity: 1, x: 0 }} // Animation when it comes into view
-                  transition={{ duration: 0.5 }} // Animation duration
-               >
-                  <h5>567 Sibonga Pandan Cebu, Postal 6020</h5>
-                  <div className="contact-view-button">
-                     <a
-                        href="https://www.google.com/maps/place/Sibonga,+Cebu/@10.0312144,123.4907009,12z/data=!4m6!3m5!1s0x33abda009b307345:0x6b7eeafa2fa8fc38!8m2!3d10.0431063!4d123.5951925!16zL20vMDZoNG55?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        <Button classEx="contact-button">View Map</Button>
-                     </a>
-                     <FontAwesomeIcon icon={faArrowRight} className="contact-arrow-right" />
-                  </div>
-                  <div>
-                     <p className="home-p">Contact: +63 93 1028 2926</p>
-                     <p className="home-p">Email: bansimplified567@gmail.com</p>
-                  </div>
-               </motion.section>
-
+            <div className="contact-form-container" >
                {/* Form Section - Slide In from the Right */}
                <motion.section
                   className="form-container"
@@ -138,15 +113,13 @@ function Contact() {
                   animate={inViewForm ? 'visible' : 'hidden'}
                >
                   <form id="contactForm" onSubmit={handleSubmit}>
-                     <h2 className="contact-h2">Contact Us</h2>
-
                      <div className="contact-input-group">
                         <div className="input-icon">
                            <input
                               type="text"
                               id="name"
                               name="name"
-                              placeholder="Enter your name"
+                              placeholder="Celina Doe"
                               value={formData.name}
                               onChange={handleChange}
                               required
@@ -161,7 +134,7 @@ function Contact() {
                               type="tel"
                               id="phone"
                               name="phone"
-                              placeholder="Enter your phone number"
+                              placeholder="2042223333"
                               value={formData.phone}
                               onChange={handleChange}
                               required
@@ -176,7 +149,7 @@ function Contact() {
                               type="email"
                               id="email"
                               name="email"
-                              placeholder="Enter your email"
+                              placeholder="abcde123@gmail.com"
                               value={formData.email}
                               onChange={handleChange}
                               required
@@ -197,10 +170,11 @@ function Contact() {
                         ></textarea>
                      </div>
 
-                     <Button className="contact-button-submit" type="submit" disabled={loading}>
+                     <Button className="contact-button-submit" type="submit" disabled={loading} >
                         {loading ? 'Sending...' : 'Send Message'}
                      </Button>
                   </form>
+
                </motion.section>
             </div>
          </div>

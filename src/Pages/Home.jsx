@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Button from '../Components/Button';
 import Footer from '../Components/Footer';
-import WideBeach from '../images/beachWide.png';
-import DoubleRooms from '../images/doubleroom.png';
+import Design from '../images/design.jpg';
+import Coding from '../images/coding.jpg';
+import Branding from '../images/branding.jpg'
 import '../styles/home.css';
 
 function Home() {
@@ -16,6 +17,10 @@ function Home() {
    const handleExploreClick = () => {
       navigate('/rooms'); // Navigate to the rooms page
    };
+
+   const handleContactClick=()=>{
+      navigate('/contact')
+   }
 
    return (
       <>
@@ -91,7 +96,7 @@ function Home() {
                         VIEW MORE
                      </Button>
                   </motion.div>
-                  <img src={DoubleRooms} alt="DoubleRooms" />
+                  <img src={Design} alt="Design" style={{width:'36%'}}/>
                </motion.article>
 
                <motion.article
@@ -111,7 +116,7 @@ function Home() {
                         VIEW MORE
                      </Button>
                   </motion.div>
-                  <img src={WideBeach} alt="WideBeach" />
+                  <img src={Coding} alt="Coding" style={{width:'36%'}}/>
                </motion.article>
                <motion.article
                   className="homesectionTwo-One"
@@ -133,7 +138,7 @@ function Home() {
                         VIEW MORE
                      </Button>
                   </motion.div>
-                  <img src={DoubleRooms} alt="DoubleRooms" />
+                  <img src={Branding} alt="Branding" style={{width:'36%'}}/>
                </motion.article>
             </motion.section>
             <motion.section
@@ -151,6 +156,9 @@ function Home() {
                      <br/>
                      that leave a lasting impression. Let’s start building together</p>
                </section>
+               <Button classEx="home-button" onClick={handleContactClick}>
+                        CONCTACT US
+                     </Button>
             </div>
             </motion.section>
             <motion.section
